@@ -131,7 +131,7 @@ class IQDecoder(Dumphfdl):
     def listen_args(self) -> list[str]:
         return [
             '--iq-file', '-',
-            '--sample-rate', str(self.channel.allowed_width * 1000),
+            '--sample-rate', '307200',
             '--sample-format', 'CS16',
             '--read-buffer-size', '9600',
             '--centerfreq', str(self.channel.center),
